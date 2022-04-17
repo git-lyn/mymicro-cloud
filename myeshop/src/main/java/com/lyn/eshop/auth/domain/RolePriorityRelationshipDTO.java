@@ -1,0 +1,84 @@
+package com.lyn.eshop.auth.domain;
+
+import com.lyn.eshop.common.util.AbstractObject;
+
+import java.util.Date;
+
+/**
+ * @program: projects
+ * @author: lyn
+ * * @create: 2021-05-14 11:06
+ **/
+public class RolePriorityRelationshipDTO extends AbstractObject {
+    /**
+     * id
+     */
+    private Long id;
+    /**
+     * 角色id
+     */
+    private Long roleId;
+    /**
+     * 权限id
+     */
+    private Long priorityId;
+    /**
+     * 创建时间
+     */
+    private Date gmtCreate;
+    /**
+     * 修改时间
+     */
+    private Date gmtModified;
+
+    @Override
+    public String toString() {
+        return "RolePriorityRelationshipDTO{" +
+                "id=" + id +
+                ", roleId=" + roleId +
+                ", priorityId=" + priorityId +
+                ", gmtCreate=" + gmtCreate +
+                ", gmtModified=" + gmtModified +
+                '}';
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(Long roleId) {
+        this.roleId = roleId;
+    }
+
+    public Long getPriorityId() {
+        return priorityId;
+    }
+
+    public void setPriorityId(Long priorityId) {
+        this.priorityId = priorityId;
+    }
+
+    public Date getGmtCreate() {
+        return gmtCreate;
+    }
+
+    public void setGmtCreate(Date gmtCreate) {
+        this.gmtCreate = gmtCreate;
+    }
+
+    public Date getGmtModified() {
+        return gmtModified;
+    }
+
+    public void setGmtModified(Date gmtModified) {
+        this.gmtModified = gmtModified;
+    }
+}
